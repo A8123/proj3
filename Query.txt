@@ -1,0 +1,4 @@
+create table login_details(username varchar2(20),passsword varchar2(20),role varchar2(20));
+create table hotel(hotel_id varchar2(4), city varchar2(10), hotel_name varchar2(20), address varchar2(25), description varchar2(50), avg_rate_per_night number(10,2), phone_no1 varchar2(10), phone_no2 varchar2(10), rating varchar2(10), email varchar2(15), fax varchar2(15));
+create sequence hotel_id_sequence start with 1234;
+create table room_table(hotel_id varchar2(4), room_id varchar2(4), room_no varchar2(3), room_type varchar(20), per_night_rate number(6,2), availability (boolean),photo blob); 
